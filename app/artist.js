@@ -35,7 +35,7 @@ router.post('/', upload.single('image'), async (req,res) => {
         };
         try {
            const newArtist = new ArtistScheme(data);
-           //await newArtist.save();
+           await newArtist.save();
             res.send(newArtist);
         } catch (e) {
             res.status(500).send(e);
