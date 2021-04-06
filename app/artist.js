@@ -1,8 +1,8 @@
 const express = require('express');
 const multer = require("multer");
-const config = require("../config");
 const path = require("path");
 const {nanoid} = require("nanoid");
+const config = require("../config");
 const ArtistScheme = require('../models/Artist');
 
 const storage = multer.diskStorage({

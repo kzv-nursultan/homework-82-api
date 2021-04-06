@@ -2,8 +2,8 @@ const express = require('express');
 const multer = require("multer");
 const path = require("path");
 const {nanoid} = require("nanoid");
-const AlbumSchema = require("../models/Album");
 const config = require('../config');
+const AlbumSchema = require("../models/Album");
 const router = express.Router();
 
 const storage = multer.diskStorage({
